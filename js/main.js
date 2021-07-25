@@ -1,9 +1,7 @@
 $(document).ready(function() {
     $('.results__slider_for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
         arrows: false,
-
+        centerMode: false,
         asNavFor: '.results__slider_nav'
     });
     $('.results__slider_nav').slick({
