@@ -27,6 +27,99 @@ Author URI: https://t.me/Ilya_Cooller
                     overflow: hidden;
                 }
                 
+                #popUpContacts {
+                    background: linear-gradient(154.36deg, #FFBF60 8.81%, #FF8227 101.17%);
+                    border-radius: 12px;
+                    padding: 52px 70px;
+                    position: relative;
+                }
+                
+                #popUpContacts.fancybox-content {
+                    overflow: initial;
+                }
+                
+                .popUpContacts__title {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 30px;
+                    line-height: 1.23;
+                    color: #000000;
+                }
+                
+                #popUpContacts .fancybox-button {
+                    color: #fff !important;
+                }
+                
+                #popUpContacts form {
+                    display: flex;
+                    margin-top: 46px;
+                    flex-direction: column;
+                    max-width: 238px;
+                    grid-gap: 18px;
+                }
+                
+                #popUpContacts form input {
+                    background: #FFFFFF;
+                    border-radius: 60px;
+                    border: 0;
+                    outline: none;
+                    width: 100%;
+                    height: 64px;
+                    padding: 0 38px;
+                }
+                
+                #popUpContacts form input::placeholder {
+                    font-size: 14px;
+                    line-height: 1.14;
+                    text-transform: uppercase;
+                    color: #E4912F;
+                }
+                
+                #popUpContacts form .btn-form {
+                    background: #FF5F46;
+                    box-shadow: 0px 12px 32px rgba(255, 95, 70, 0.42);
+                    border-radius: 50px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 1.14;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                }
+                
+                #popUpContacts .checkbox {
+                    display: flex;
+                    align-items: center;
+                }
+                
+                #popUpContacts .checkbox label {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 1.2;
+                    color: #000000;
+                    margin-left: 9px;
+                }
+                
+                #popUpContacts img {
+                    position: absolute;
+                    right: -200px;
+                    top: 0;
+                }
+                
+                #popUpContacts .checkbox label a {
+                    color: #fff;
+                }
+                
+                #popUpContacts .checkbox #checkboxB {
+                    max-width: 13px;
+                }
+                
+                .popUpContacts__title span {
+                    font-weight: 900;
+                    display: block;
+                }
+                
                 .anchor__top {
                     width: 52px;
                     height: 52px;
@@ -831,6 +924,15 @@ Author URI: https://t.me/Ilya_Cooller
                     text-decoration-line: underline;
                     color: #FFFFFF;
                 }
+                
+                .footer__additional-mobile {
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 14px;
+                    line-height: 1.21;
+                    color: #FFFFFF;
+                    margin-bottom: 23px;
+                }
                 /* ////////////////////////////MediaSize////////////////////////////// */
                 
                 @media (max-width:1400px) {
@@ -1095,5 +1197,222 @@ Author URI: https://t.me/Ilya_Cooller
                     }
                     .footer__additional {
                         margin-right: 0;
+                    }
+                }
+                
+                @media (max-width:790px) {
+                    .brands__list .row {
+                        flex-wrap: wrap;
+                    }
+                    .CallBack form img {
+                        max-width: 200px;
+                    }
+                    .footer__additional {
+                        grid-gap: 10px;
+                    }
+                    .footer__additional a {
+                        font-size: 12px;
+                    }
+                    .footer__block .logo {
+                        max-width: 44px;
+                        width: 100%;
+                    }
+                    .footer_polit::after {
+                        top: 100px;
+                    }
+                    .CallBack form input::placeholder,
+                    .CallBack form .btn-form {
+                        font-size: 10px;
+                    }
+                    .header__menu li a {
+                        white-space: nowrap;
+                    }
+                    .header__menu {
+                        margin-left: 10px;
+                    }
+                }
+                
+                @media (max-width:570px) {
+                    .header__menu {
+                        display: none;
+                    }
+                    .header__contacts a {
+                        font-size: 18px;
+                        color: #FFFFFF;
+                    }
+                    .header__contacts .btn-call {
+                        color: #FFBF60;
+                        font-size: 14px;
+                        border-bottom: 1px dashed #FFBF60;
+                    }
+                    .container-lg {
+                        padding: 0 20px;
+                    }
+                    .main__banner-right {
+                        right: 110px;
+                        top: 214px;
+                    }
+                    .main__banner-right3 img {
+                        max-width: 50%;
+                    }
+                    .main__banner-right {
+                        position: relative;
+                    }
+                    .main__banner-right {
+                        right: 0;
+                        top: -60px;
+                    }
+                    .main__banner-left p {
+                        font-size: 18px;
+                        max-width: 334px;
+                    }
+                    .main__banner-left button {
+                        font-size: 14px;
+                    }
+                    .title {
+                        margin-bottom: 33px;
+                    }
+                    .AboutMethods__TopBlock .row {
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                    .AboutMethods__TopBlock-right,
+                    .AboutMethods__BottomBlock-right {
+                        order: -1;
+                        text-align: center;
+                        margin-bottom: 29px;
+                    }
+                    .AboutMethods__TopBlock-right img,
+                    .AboutMethods__BottomBlock-right img {
+                        max-width: 200px;
+                    }
+                    .AboutMethods__TopBlock-left-title,
+                    .AboutMethods__BottomBlock-left-title {
+                        text-align: center;
+                        margin-bottom: 23px;
+                    }
+                    .AboutMethods__TopBlock {
+                        margin-bottom: 36px;
+                    }
+                    .paymentFact {
+                        padding-top: 0;
+                        margin-bottom: 80px;
+                    }
+                    .paymentFact .paymentFact__block p {
+                        font-size: 24px;
+                        max-width: 286px;
+                        text-align: center;
+                        margin-bottom: 25px;
+                    }
+                    .paymentFact .paymentFact__block {
+                        flex-direction: column;
+                        padding: 37px 24px;
+                        padding-bottom: 0;
+                    }
+                    .paymentFact .paymentFact__block button {
+                        max-width: 196px;
+                        height: 56px;
+                        margin-bottom: 10px;
+                    }
+                    .paymentFact .paymentFact__block img {
+                        position: relative;
+                        max-width: 439px;
+                    }
+                    .results__slider_nav-img {
+                        position: relative;
+                        left: -42px;
+                        width: auto;
+                    }
+                    .results__slider_nav-block {
+                        padding: 37px;
+                    }
+                    .results__slider_nav-block::after {
+                        content: '';
+                    }
+                    .results__slider_nav {
+                        margin-bottom: 112px;
+                    }
+                    .results__slider_for {
+                        width: 770px !important;
+                        max-width: unset;
+                        overflow-x: scroll;
+                    }
+                    .results__slider_for-block {
+                        width: 770px !important;
+                        max-width: unset;
+                        overflow-x: scroll;
+                    }
+                    .brands__list .row {
+                        margin-bottom: 96px;
+                    }
+                    .CallBack-title {
+                        font-size: 21px;
+                        text-align: center;
+                        max-width: 334px;
+                        margin: 0 auto;
+                        margin-bottom: 31px;
+                    }
+                    .CallBack form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .CallBack form img {
+                        max-width: 330px;
+                        position: relative;
+                        right: 0;
+                    }
+                    .CallBack form .row {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        grid-gap: 12px;
+                    }
+                    .CallBack form .btn-form {
+                        height: 64px;
+                    }
+                    .CallBack form input {
+                        max-width: 100%;
+                        height: 64px;
+                    }
+                    .CallBack form {
+                        padding: 48px 43px;
+                        padding-bottom: 0;
+                    }
+                    .CallBack form input::placeholder,
+                    .CallBack form .btn-form {
+                        font-size: 14px;
+                    }
+                    .footer__additional {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .footer__additional a {
+                        font-size: 14px;
+                    }
+                    .footer__additional-block-mail a {
+                        font-weight: normal;
+                    }
+                    .footer_polit::after {
+                        top: 200px;
+                    }
+                    .popUpContacts__title {
+                        text-align: center;
+                        font-size: 24px;
+                    }
+                    #popUpContacts form {
+                        margin-top: 30px;
+                        max-width: 248px;
+                    }
+                    #popUpContacts .checkbox {
+                        margin-bottom: 218px;
+                    }
+                    #popUpContacts img {
+                        position: absolute;
+                        right: -35px;
+                        top: 443px;
+                    }
+                    #popUpContacts.fancybox-content {
+                        overflow: hidden;
                     }
                 }
