@@ -1480,6 +1480,8 @@ td img {
     }
     .footer__additional {
         grid-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
     }
     .footer__additional a {
         font-size: 12px;
@@ -1516,6 +1518,9 @@ td img {
 }
 
 @media (max-width:570px) {
+    .footer__additional {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .header__menu {
         display: none;
     }
@@ -1627,14 +1632,16 @@ td img {
         margin-bottom: 112px;
     }
     .results__slider_for {
-        width: 770px !important;
         max-width: unset;
-        overflow-x: scroll;
+        overflow: scroll;
     }
     .results__slider_for-block {
-        width: 770px !important;
+        width: 770px;
         max-width: unset;
-        overflow-x: scroll;
+        overflow: scroll;
+    }
+    .results__slider_for-block table {
+        width: 770px;
     }
     .brands__list .row {
         margin-bottom: 96px;
@@ -1738,5 +1745,8 @@ td img {
     }
     #popUpContacts.fancybox-content {
         overflow: hidden;
+    }
+    .brands__list .row div {
+        margin-right: 10px;
     }
 }

@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('.results__slider_for').slick({
         arrows: false,
         centerMode: false,
+        swipe: false,
         asNavFor: '.results__slider_nav'
     });
     $('.results__slider_nav').slick({
